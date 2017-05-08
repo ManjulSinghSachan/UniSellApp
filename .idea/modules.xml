@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Unisell Project.iml" filepath="$PROJECT_DIR$/Unisell Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UniSellApp.iml" filepath="$PROJECT_DIR$/UniSellApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

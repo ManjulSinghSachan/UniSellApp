@@ -4,35 +4,39 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_electronics"
+            android:icon="@drawable/ic_home"
             android:title="@string/nav_home" />
         <item
-            android:id="@+id/nav_photos"
-            android:icon="@drawable/ic_books"
-            android:title="@string/nav_photos" />
+            android:id="@+id/nav_electronics"
+            android:icon="@drawable/ic_electronics"
+            android:title="@string/nav_electronics" />
         <item
-            android:id="@+id/nav_movies"
+            android:id="@+id/nav_books"
+            android:icon="@drawable/ic_books"
+            android:title="@string/nav_books" />
+        <item
+            android:id="@+id/nav_sports"
             android:icon="@drawable/ic_sports"
-            android:title="@string/nav_movies" />
+            android:title="@string/nav_sports" />
 
         <item
-            android:id="@+id/nav_notifications"
+            android:id="@+id/nav_stationary"
             android:icon="@drawable/ic_stationary"
-            android:title="@string/nav_notifications" />
+            android:title="@string/nav_stationary" />
 
         <item
             android:id="@+id/nav_settings"
-            android:icon="@drawable/ic_settings_black_24dp"
+            android:icon="@drawable/ic_settings"
             android:title="@string/nav_settings" />
     </group>
 
     <item android:title="Other">
         <menu>
             <item
-                android:id="@+id/nav_about_us"
-                android:title="@string/nav_about_us" />
+                android:id="@+id/nav_orders"
+                android:title="@string/nav_orders" />
             <item
-                android:id="@+id/nav_privacy_policy"
+                android:id="@+id/nav_profile"
                 android:title="@string/privacy_policy" />
         </menu>
     </item>

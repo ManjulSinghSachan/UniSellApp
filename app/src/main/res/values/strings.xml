@@ -7,15 +7,17 @@
     <string name="closeDrawer">close_drawer</string>
 
     <!-- Navigation Drawer menu labels -->
-    <string name="nav_home">Electronics</string>
-    <string name="nav_photos">Books</string>
-    <string name="nav_movies">Sport Equipments</string>
-    <string name="nav_notifications">Stationary</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_electronics">Electronics</string>
+    <string name="nav_books">Books</string>
+    <string name="nav_sports">Sport Equipments</string>
+    <string name="nav_stationary">Stationary</string>
     <string name="nav_settings">Settings</string>
-    <string name="nav_about_us">My Orders</string>
+    <string name="nav_orders">My Orders</string>
 
     <!-- Toolbar titles when navigation menu item is selected -->
     <string-array name="nav_item_activity_titles">
+        <item>Home</item>
         <item>Electronics</item>
         <item>Books</item>
         <item>Sport Equipments</item>
@@ -29,4 +31,7 @@
     <string name="action_logout">Logout</string>
     <string name="action_mark_all_read">Mark All as Read</string>
     <string name="privacy_policy">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
