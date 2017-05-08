@@ -31,8 +31,7 @@
     <string name="action_logout">Logout</string>
     <string name="action_mark_all_read">Mark All as Read</string>
     <string name="privacy_policy">Profile</string>
-    
-    <string name="app_name">Unisell</string>
+
     <string name="register_page">Unisell - Register</string>
     <string name="login_page">Unisell - Login</string>
 

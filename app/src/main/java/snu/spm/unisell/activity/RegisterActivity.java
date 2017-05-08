@@ -6,6 +6,8 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
+import snu.spm.unisell.R;
+
 /**
  * Created by MRUDULA on 14-04-2017.
  */
