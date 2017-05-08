@@ -1,11 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <color name="colorPrimary">#67b0d6</color>
-    <color name="colorPrimaryDark">#323c3f</color>
-    <color name="colorAccent">#ffffff</color>
-    <color name="login">#AEEA00</color>
-    <color name="forgotPassword">#FF8A80</color>
-    <color name="register">#64B5F6</color>
-    <color name="black">#000000</color>
-    <color name="light_gray">#FFC1BEBD</color>
+  <color name="colorPrimary">#67b0d6</color>
+  <color name="colorPrimaryDark">#323c3f</color>
+  <color name="colorAccent">#ffffff</color>
+  <color name="login">#AEEA00</color>
+  <color name="forgotPassword">#FF8A80</color>
+  <color name="register">#64B5F6</color>
+  <color name="black">#000000</color>
+  <color name="light_gray">#FFC1BEBD</color>
+  <color name="whitesmoke">#f8f8f8</color>
+  <color name="glitter">#e8ecf0</color>
+  <color name="charcoal">#38474f</color>
+  <color name="silver">#bfbfc4</color>
+  <color name="darkgray">#a6a6ad</color>
+  <color name="gainsboro">#dcdcdc</color>
+  <color name="charcoal_1">#3a4144</color>
 </resources>
+
