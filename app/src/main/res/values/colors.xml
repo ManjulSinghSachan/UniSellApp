@@ -3,4 +3,7 @@
     <color name="colorPrimary">#67b0d6</color>
     <color name="colorPrimaryDark">#323c3f</color>
     <color name="colorAccent">#FFFFFF</color>
+    <color name="login">#AEEA00</color>
+    <color name="forgotPassword">#FF8A80</color>
+    <color name="register">#64B5F6</color>
 </resources>
