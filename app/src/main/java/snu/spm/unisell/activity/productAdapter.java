@@ -10,15 +10,16 @@ import android.widget.TextView;
 import java.util.List;
 
 import snu.spm.unisell.R;
+import snu.spm.unisell.other.OrderItem;
 
 /**
  * Created by MRUDULA on 08-05-2017.
  */
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.productCardViewHolder> {
 
-    private List<OrderInfoActivity> orderList;
+    private List<OrderItem> orderList;
 
-    public ProductAdapter(List<OrderInfoActivity> orderList) {
+    public ProductAdapter(List<OrderItem> orderList) {
         this.orderList = orderList;
     }
 
@@ -29,10 +30,10 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.productC
 
     @Override
     public void onBindViewHolder(productCardViewHolder orderViewHolder, int i) {
-        OrderInfoActivity order = orderList.get(i);
-        orderViewHolder.image.setImageResource(order.mImageId);
-        orderViewHolder.productName.setText(order.mProductName);
-        orderViewHolder.productPrice.setText(order.mPrice);
+        OrderItem order = orderList.get(i);
+        orderViewHolder.image.setImageResource(order.getmImageId());
+        orderViewHolder.productName.setText(order.getmProductName());
+        orderViewHolder.productPrice.setText(order.getmPrice());
     }
 
     @Override

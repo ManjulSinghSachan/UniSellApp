@@ -1,4 +1,4 @@
-package com.example.android.unisell;
+package snu.spm.unisell.activity;
 
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;

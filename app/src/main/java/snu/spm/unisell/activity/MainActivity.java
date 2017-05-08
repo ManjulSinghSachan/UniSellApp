@@ -222,7 +222,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.nav_orders:
                         // launch new intent instead of loading fragment
-                        startActivity(new Intent(MainActivity.this, AboutUsActivity.class));
+                        startActivity(new Intent(MainActivity.this, MyOrdersActivity.class));
                         drawer.closeDrawers();
                         return true;
                     case R.id.nav_profile:

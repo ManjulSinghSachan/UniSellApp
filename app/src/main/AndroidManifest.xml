@@ -20,13 +20,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activity.AboutUsActivity"
-            android:label="@string/activity_title_about_us" />
+        <activity android:name=".activity.MyOrdersActivity"
+            android:label="My Orders"
+            android:parentActivityName=".activity.MainActivity"/>
         <activity
             android:name=".activity.ProfileActivity"
-            android:label="@string/activity_title_privacy_policy" />
-        <activity android:name=".activity.ProductDetailsActivity"></activity>
+            android:label="@string/activity_title_privacy_policy"/>
+        <activity android:name=".activity.ProductDetailsActivity"
+            android:label="Details"/>
     </application>
 
 </manifest>

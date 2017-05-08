@@ -1,4 +1,4 @@
-package com.example.android.unisell;
+package snu.spm.unisell.activity;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(), com.example.android.unisell.RegisterActivity.class);
+                Intent i = new Intent(v.getContext(), snu.spm.unisell.activity.RegisterActivity.class);
                 startActivity(i);
             }
         });
