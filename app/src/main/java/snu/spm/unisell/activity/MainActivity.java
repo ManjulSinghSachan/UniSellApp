@@ -227,7 +227,7 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     case R.id.nav_profile:
                         // launch new intent instead of loading fragment
-                        startActivity(new Intent(MainActivity.this, PrivacyPolicyActivity.class));
+                        startActivity(new Intent(MainActivity.this, ProfileActivity.class));
                         drawer.closeDrawers();
                         return true;
                     default:
