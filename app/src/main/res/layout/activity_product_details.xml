@@ -8,13 +8,17 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="snu.spm.unisell.activity.ProductDetails"
+    tools:context="snu.spm.unisell.activity.ProductDetailsActivity"
     android:orientation="vertical"
     android:background="@color/light_gray">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="395dp"
@@ -24,7 +28,8 @@
             android:background="@color/colorAccent">
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:src="@drawable/img"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -32,14 +37,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/product_name"/>
+                    android:id="@+id/product_name"
+                    android:text="Sony Headphones"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
                 <TextView
                     android:layout_width="96dp"
                     android:layout_height="45dp"
-                    android:background="@color/charcoal"
-                    android:id="@+id/price"
-                    android:paddingLeft="297dp"
-                    android:paddingRight="33dp"/>
+                    android:background="@color/darkgray"
+                    android:id="@+id/price" />
             </LinearLayout>
 
         </LinearLayout>
@@ -51,7 +56,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/details"/>
+                android:text="@string/details"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -59,7 +65,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/product_details"/>
+                android:id="@+id/product_details"
+                android:text="Lorem\nipsum\ndolor\nsit\namet"/>
         </LinearLayout>
 
         <LinearLayout
@@ -74,7 +81,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/soldby"/>
+                    android:text="@string/soldby"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -109,5 +117,6 @@
             android:layout_height="40dp"
             android:background="@color/colorPrimaryDark"
             android:text="@string/add_to_cart"/>
+        </LinearLayout>
     </ScrollView>
 </LinearLayout>

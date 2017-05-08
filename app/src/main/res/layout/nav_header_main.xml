@@ -8,7 +8,7 @@
     android:gravity="center"
     android:orientation="horizontal"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
-    tools:background="#323c3f">
+    android:background="@color/charcoal">
 
     <!--<ImageView-->
         <!--android:id="@+id/img_header_bg"-->
