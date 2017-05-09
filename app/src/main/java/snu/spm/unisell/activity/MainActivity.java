@@ -1,8 +1,10 @@
 package snu.spm.unisell.activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -10,6 +12,9 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,13 +22,18 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import snu.spm.unisell.R;
+import snu.spm.unisell.adapters.ProductListCustomAdapter;
 import snu.spm.unisell.fragment.BooksFragment;
 import snu.spm.unisell.fragment.ElectronicsFragment;
 import snu.spm.unisell.fragment.HomeFragment;
 import snu.spm.unisell.fragment.SportsFragment;
 import snu.spm.unisell.fragment.StationaryFragment;
 import snu.spm.unisell.fragment.SettingsFragment;
+import snu.spm.unisell.models.ProductModel;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -53,6 +63,17 @@ public class MainActivity extends AppCompatActivity {
     private Handler mHandler;
 
 
+
+    private CoordinatorLayout mMainLayout;
+
+
+    private RecyclerView recyclerView;
+    private ProductListCustomAdapter adapter;
+    private List<ProductModel> mProductList;
+
+
+    private Context mContext;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         mHandler = new Handler();
+        mContext = this;
 
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -77,6 +99,10 @@ public class MainActivity extends AppCompatActivity {
 
         // initializing navigation menu
         setUpNavigationView();
+
+        mMainLayout = (CoordinatorLayout) findViewById(R.id.coordinator_layout);
+
+        setUpRecyclerView(mMainLayout, mContext);
 
         if (savedInstanceState == null) {
             navItemIndex = 0;
@@ -337,5 +363,42 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+    public void setUpRecyclerView(CoordinatorLayout mCoordinatorLayout, Context mContext){
+
+        recyclerView = (RecyclerView) mCoordinatorLayout.findViewById(R.id.recycler_view);
+        mProductList = new ArrayList<ProductModel>();
+        adapter = new ProductListCustomAdapter(mContext, mProductList);
+
+        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 2);
+        recyclerView.setLayoutManager(mLayoutManager);
+        //recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(10), true));
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setAdapter(adapter);
+        prepareAlbums();
+
+
+    }
+
+    private void prepareAlbums() {
+
+
+        ProductModel a = new ProductModel("Speaker", 2000, "covers");
+        mProductList.add(a);
+
+        a = new ProductModel("Phone", 1500, "covers");
+        mProductList.add(a);
+
+        a = new ProductModel("Guitar", 1200, "covers");
+        mProductList.add(a);
+
+        a = new ProductModel("Football", 1000, "covers");
+        mProductList.add(a);
+
+
+        adapter.notifyDataSetChanged();
+    }
+
 
 }
