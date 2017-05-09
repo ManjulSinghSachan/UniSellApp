@@ -24,6 +24,14 @@ public class LoginActivity extends AppCompatActivity {
         int loginColor = ContextCompat.getColor(getBaseContext(),R.color.login);
         sd.setColor(loginColor);
 
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(view.getContext(), snu.spm.unisell.activity.MainActivity.class);
+                startActivity(i);
+            }
+        });
+
         Button button2 = (Button) findViewById(R.id.forgotPassword);
         GradientDrawable sd1 = (GradientDrawable) button2.getBackground();
         int passwordColor = ContextCompat.getColor(getBaseContext(),R.color.forgotPassword);
@@ -35,12 +43,12 @@ public class LoginActivity extends AppCompatActivity {
         sd2.setColor(registerColor);
 
         TextView tx = (TextView)findViewById(R.id.textview1);
-        Typeface custom_font = Typeface.createFromAsset(getAssets(), "fonts/Caviar_Dreams_Bold.ttf");
-        tx.setTypeface(custom_font);
+        //Typeface custom_font = Typeface.createFromAsset(getAssets(), "fonts/Caviar_Dreams_Bold.ttf");
+        //tx.setTypeface(custom_font);
 
         TextView tx1 = (TextView)findViewById(R.id.textview2);
-        Typeface custom_font1 = Typeface.createFromAsset(getAssets(), "fonts/Caviar_Dreams_Bold.ttf");
-        tx1.setTypeface(custom_font1);
+        //Typeface custom_font1 = Typeface.createFromAsset(getAssets(), "fonts/Caviar_Dreams_Bold.ttf");
+        //tx1.setTypeface(custom_font1);
 
         //Intent is sent for register page to open on clicking the register button
         button3.setOnClickListener(new View.OnClickListener() {
