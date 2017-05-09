@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import snu.spm.unisell.R;
+import snu.spm.unisell.adapters.ProductAdapter;
 import snu.spm.unisell.other.OrderItem;
 
 public class MyOrdersActivity extends AppCompatActivity {

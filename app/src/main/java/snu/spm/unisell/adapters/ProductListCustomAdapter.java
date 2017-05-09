@@ -59,6 +59,7 @@ public class ProductListCustomAdapter extends RecyclerView.Adapter<ProductListCu
         // loading album cover using Glide library
         Glide.with(mContext).load(mProduct.getImage()).into(holder.mProductImageImageView);
 
+
     }
 
     @Override

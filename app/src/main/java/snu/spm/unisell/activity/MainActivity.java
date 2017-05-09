@@ -378,6 +378,9 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         prepareAlbums();
 
+        recyclerView.
+
+
 
     }
 
@@ -395,6 +398,8 @@ public class MainActivity extends AppCompatActivity {
 
         a = new ProductModel("Football", 1000, "covers");
         mProductList.add(a);
+
+
 
 
         adapter.notifyDataSetChanged();
